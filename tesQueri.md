@@ -1,5 +1,5 @@
 // Masuk ke MySQL  
-``mysql -u root``  
+<code>mysql -u root</code>  
 
 // Melihat daftar database
 MariaDB [(none)]> show databases;
