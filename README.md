@@ -1,5 +1,5 @@
 ## Tes Query
 
 ---
-> [!NOTE]Catatan kaki fransis.  
+> [!NOTE] Catatan kaki fransis.  
 
