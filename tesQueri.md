@@ -1,24 +1,15 @@
 // Masuk ke MySQL  
-<code>mysql -u root</code>  
+```
+mysql -u root
+``` 
 
 // Melihat daftar database
+```
 MariaDB [(none)]> show databases;
-+--------------------+
-| Database |
-+--------------------+
-| akademik |
-| db_peminjaman |
-| db_pengguna |
-| db_perpus |
-| information_schema |
-| mysql |
-| performance_schema |
-| phpmyadmin |
-| test |
-+--------------------+
-9 rows in set (0.002 sec)
+```
 // Membuat database
-MariaDB [(none)]> create database phpdasar;
+```bash
+create database phpdasar;
 Query OK, 1 row affected (0.002 sec)
 MariaDB [(none)]> show databases;
 +--------------------+
