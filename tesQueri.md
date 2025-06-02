@@ -1,5 +1,5 @@
-// Masuk ke MySQL
-C:\Users\Acer>```mysql -u root```  
+// Masuk ke MySQL  
+```mysql -u root```  
 
 // Melihat daftar database
 MariaDB [(none)]> show databases;
