@@ -42,75 +42,51 @@ describe mahasiswa;
 insert into mahasiswa values (
   '', 'Fransis', '215410072', 'fransis@example.info','Informatika','frans.jpg'
 );
+``` 
 
-MariaDB [phpdasar]> select * from mahasiswa;
-+----+---------+-----------+----------------------+-------------+-----------+
-| id | nama | nrp | email | jurusan | gambar |
-+----+---------+-----------+----------------------+-------------+-----------+
-| 1 | Fransis | 215410072 | fransis@example.info | Informatika | frans.jpg |
-+----+---------+-----------+----------------------+-------------+-----------+
-1 row in set (0.001 sec)
-// Melihat isi tabel
-MariaDB [phpdasar]> select nama from mahasiswa;
-+---------+
-| nama |
-+---------+| Fransis |
-+---------+
-1 row in set (0.000 sec)
-// Melihat data pada field tertentu (Misalnya NIM / nrp)
-MariaDB [phpdasar]> select nrp from mahasiswa;
-+-----------+
-| nrp |
-+-----------+
-| 215410072 |
-+-----------+
-1 row in set (0.001 sec)
-MariaDB [phpdasar]> select nrp,nama from mahasiswa;
-+-----------+---------+
-| nrp | nama |
-+-----------+---------+
-| 215410072 | Fransis |
-+-----------+---------+
-1 row in set (0.001 sec)
-MariaDB [phpdasar]> select nrp,nama,jurusan from mahasiswa;
-+-----------+---------+-------------+
-| nrp | nama | jurusan |
-+-----------+---------+-------------+
-| 215410072 | Fransis | Informatika |
-+-----------+---------+-------------+
-1 row in set (0.001 sec)
-MariaDB [phpdasar]> select nama,gambar from mahasiswa;
-+---------+-----------+
-| nama | gambar |
-+---------+-----------+
-| Fransis | frans.jpg |
-+---------+-----------+
-1 row in set (0.001 sec)
-// Menambah 1 record pada tabel mahasiswa (Menambah 1 data mahasiswa)
-MariaDB [phpdasar]> insert into mahasiswa values(
--> '',
--> 'Agnes',
--> '215410000',
--> 'agnes@hotmail.com',
--> 'Teknik Komputer',
--> 'Agnes.jpg');
-Query OK, 1 row affected, 1 warning (0.003 sec)
-MariaDB [phpdasar]> insert into mahasiswa values(
--> '',
--> 'Fitria',
--> '215410067',-> 'fitria@gmail.com',
--> 'Informatika',
--> 'Fitri.jpg');
-Query OK, 1 row affected, 1 warning (0.005 sec)
-// Meilihat / Menampilkan data tertentu pada tabel
-MariaDB [phpdasar]> select nama from mahasiswa;
-+---------+
-| nama |
-+---------+
-| Fransis |
-| Agnes |
-| Fitria |
-+---------+
+- **Melihat isi tabel**
+```bash
+select * from mahasiswa;
+```
+
+- **Menampilkan data dari field nama**
+```bash
+select nama from mahasiswa;
+```
+
+- **Melihat data pada field tertentu (Misalnya NIM / nrp)**
+```bash
+select nrp from mahasiswa;
+```
+
+```bash
+select nrp,nama from mahasiswa;
+```
+
+```bash
+select nrp,nama,jurusan from mahasiswa;
+```
+
+```bash
+select nama,gambar from mahasiswa;
+```
+
+- **Menambah 1 record pada tabel mahasiswa (Menambah 1 data mahasiswa)**
+```bash
+insert into mahasiswa values(
+  '','Agnes','215410000','agnes@hotmail.com','Teknik Komputer','Agnes.jpg'
+);
+
+
+insert into mahasiswa values(
+  '','Fitria','215410067',-> 'fitria@gmail.com','Informatika','Fitri.jpg'
+);
+
+- Menampilkan data dari field tertentu
+```bash
+select nama from mahasiswa;
+```
+
 3 rows in set (0.001 sec)
 MariaDB [phpdasar]> select nrp,nama,jurusan from mahasiswa;
 +-----------+---------+-----------------+
