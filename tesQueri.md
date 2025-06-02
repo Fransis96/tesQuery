@@ -1,69 +1,48 @@
-// Masuk ke MySQL  
+- **Masuk ke MySQL**
 ```
 mysql -u root
 ``` 
 
-// Melihat daftar database
+- **Melihat daftar database**
 ```
 MariaDB [(none)]> show databases;
 ```
-// Membuat database
+- **Membuat database**
 ```bash
 create database phpdasar;
-Query OK, 1 row affected (0.002 sec)
-MariaDB [(none)]> show databases;
-+--------------------+
-| Database |
-+--------------------+
-| akademik |
-| db_peminjaman |
-| db_pengguna |
-| db_perpus |
-| information_schema |
-| mysql |
-| performance_schema |
-| phpdasar |
-| phpmyadmin |
-| test |
-+--------------------+
-10 rows in set (0.001 sec)
-// Masuk kedalam database (Menggunakan database)
-MariaDB [(none)]> use phpdasar;
-Database changed// Membuat table dengan nama mahasiswa
-MariaDB [phpdasar]> create table mahasiswa(
--> id int primary key auto_increment,
--> nama varchar(100),
--> nrp char(9),
--> email varchar(100),
--> jurusan varchar(100),
--> gambar varchar(100)
--> );
-Query OK, 0 rows affected (0.012 sec)
-// Melihat tabel-tabel di database phpdasar
-MariaDB [phpdasar]> show tables;
-+--------------------+
-| Tables_in_phpdasar |
-+--------------------+
-| mahasiswa |
-+--------------------+
-1 row in set (0.001 sec)
-// Melihat deskripsi tabel
-MariaDB [phpdasar]> describe mahasiswa;
-+---------+--------------+------+-----+---------+----------------+
-| Field | Type | Null | Key | Default | Extra |
-+---------+--------------+------+-----+---------+----------------+
-| id | int(11) | NO | PRI | NULL | auto_increment |
-| nama | varchar(100) | YES | | NULL | |
-| nrp | char(9) | YES | | NULL | |
-| email | varchar(100) | YES | | NULL | |
-| jurusan | varchar(100) | YES | | NULL | |
-| gambar | varchar(100) | YES | | NULL | |
-+---------+--------------+------+-----+---------+----------------+
-6 rows in set (0.046 sec)
-// Menambahkan data kedalam tabel
-MariaDB [phpdasar]> insert into mahasiswa values ('', 'Fransis', '215410072',
-'fransis@example.info','Informatika','frans.jpg');
-Query OK, 1 row affected, 1 warning (0.005 sec)
+```  
+- **Masuk kedalam database** (*Menggunakan database*)
+```bash
+use phpdasar;
+```
+- **Membuat table dengan nama mahasiswa**
+```bash  
+create table mahasiswa(
+  id int primary key auto_increment,
+  nama varchar(100),
+  nrp char(9),
+  email varchar(100),
+  jurusan varchar(100),
+  gambar varchar(100)
+);
+```
+
+- **Melihat tabel-tabel di database phpdasar**
+```bash
+show tables;
+```
+
+- **Melihat deskripsi tabel**
+```bash
+describe mahasiswa;
+```
+
+- **Menambahkan data kedalam tabel**
+```bash
+insert into mahasiswa values (
+  '', 'Fransis', '215410072', 'fransis@example.info','Informatika','frans.jpg'
+);
+
 MariaDB [phpdasar]> select * from mahasiswa;
 +----+---------+-----------+----------------------+-------------+-----------+
 | id | nama | nrp | email | jurusan | gambar |
