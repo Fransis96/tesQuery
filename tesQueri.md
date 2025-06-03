@@ -66,34 +66,28 @@ select nrp,nama from mahasiswa;
 ```bash
 select nrp,nama,jurusan from mahasiswa;
 ```
-
+- **READ**
 ```bash
 select nama,gambar from mahasiswa;
 ```
 
-- **Menambah 1 record pada tabel mahasiswa (Menambah 1 data mahasiswa)**
+- **Menambah 1 record pada tabel mahasiswa (CREATE)**
 ```bash
 insert into mahasiswa values(
   '','Agnes','215410000','agnes@hotmail.com','Teknik Komputer','Agnes.jpg'
 );
 ```
 
-```bash
-insert into mahasiswa values(
-  '','Fitria','215410067',-> 'fitria@gmail.com','Informatika','Fitri.jpg'
-);
-```
-
-- Menampilkan data dari field tertentu  
+- **Menampilkan data dari field tertentu  (READ)**
 ```bash
 select nama from mahasiswa;
 ```
-
+- **READ**
 ```bash
 select nrp,nama,jurusan from mahasiswa;
 ```
 
-- **Mencari data berdasarkan nrp / nim**
+- **Mencari data berdasarkan nrp / nim (READ - SEARCHING)**
 ```bash
 select * from mahasiswa where nrp='215410072';
 ```
@@ -103,12 +97,12 @@ select * from mahasiswa where nrp='215410072';
 select * from mahasiswa;
 ```
 
-- **Melakukan Edit Data / Record berdasarkan primary key (id)**
+- **Melakukan Edit Data / Record berdasarkan primary key "id" (UPDATE)**
 ```bash
 update mahasiswa set jurusan='Informatika' where id = 2;
 ```
 
-- **Menampilkan isi table**
+- **Menampilkan isi table (READ)**
 ```bash
 select * from mahasiswa;
 ```
@@ -118,9 +112,13 @@ select * from mahasiswa;
 delete from mahasiswa where id=1;
 ```
 
-- **Menampilkan isi table**
+- **Menampilkan isi table (READ)**
 ```bash
 select * from mahasiswa;
+```
+- **DELETE**
+```bash
+delete from mahasiswa where id=1;
 ```
 
 - **Menghapus table “mahasiswa”**
