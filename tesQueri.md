@@ -108,51 +108,32 @@ select * from mahasiswa;
 update mahasiswa set jurusan='Informatika' where id = 2;
 ```
 
-Query OK, 1 row affected (0.003 sec)
-Rows matched: 1 Changed: 1 Warnings: 0// Menampilkan isi table
-MariaDB [phpdasar]> select * from mahasiswa;
-+----+---------+-----------+----------------------+-------------+-----------+
-| id | nama | nrp | email | jurusan | gambar |
-+----+---------+-----------+----------------------+-------------+-----------+
-| 1 | Fransis | 215410072 | fransis@example.info | Informatika | frans.jpg |
-| 2 | Agnes | 215410000 | agnes@hotmail.com | Informatika | Agnes.jpg |
-| 3 | Fitria | 215410067 | fitria@gmail.com | Informatika | Fitri.jpg |
-+----+---------+-----------+----------------------+-------------+-----------+
-3 rows in set (0.001 sec)
-// Menghapus 1 Record (atau data) berdasarkan id / primary key
-MariaDB [phpdasar]> delete from mahasiswa where id=1;
-Query OK, 1 row affected (0.003 sec)
-// Menampilkan isi table
-MariaDB [phpdasar]> select * from mahasiswa;
-+----+--------+-----------+-------------------+-------------+-----------+
-| id | nama | nrp | email | jurusan | gambar |
-+----+--------+-----------+-------------------+-------------+-----------+
-| 2 | Agnes | 215410000 | agnes@hotmail.com | Informatika | Agnes.jpg |
-| 3 | Fitria | 215410067 | fitria@gmail.com | Informatika | Fitri.jpg |
-+----+--------+-----------+-------------------+-------------+-----------+
-2 rows in set (0.000 sec)
-// Menghapus table “mahasiswa”
-MariaDB [phpdasar]> drop table mahasiswa;
-Query OK, 0 rows affected (0.008 sec)
-// Melihat (Manampilkan) tabel pada database phpdasar
-MariaDB [phpdasar]> show tables;
-Empty set (0.001 sec)
-// Menghapus database
-MariaDB [phpdasar]> drop database phpdasar;
-Query OK, 0 rows affected (0.003 sec)
-// Menampilkan (Melihat) database
-MariaDB [(none)]> show databases;
-+--------------------+
-| Database |
-+--------------------+
-| akademik |
-| db_peminjaman |
-| db_pengguna |
-| db_perpus |
-| information_schema |
-| mysql |
-| performance_schema |
-| phpmyadmin |
-| test |+--------------------+
-9 rows in set (0.002 sec)
-MariaDB [(none)]>
+- **Menampilkan isi table**
+```bash
+select * from mahasiswa;
+```
+
+- **Menghapus 1 Record (atau data) berdasarkan id / primary key**
+```bash
+delete from mahasiswa where id=1;
+```
+
+- **Menampilkan isi table**
+```bash
+select * from mahasiswa;
+```
+
+- **Menghapus table “mahasiswa”**
+```bash
+drop table mahasiswa;
+``` 
+
+- **Menghapus database**
+```bash
+drop database phpdasar;
+```
+
+- **Menampilkan (Melihat) database**
+```bash
+show databases;
+```
