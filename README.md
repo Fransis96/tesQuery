@@ -1,4 +1,4 @@
 ## Tes Query
 
 > [!NOTE]  
-> Catatan kaki fransis.  
+> Catatan kaki Kita.  
