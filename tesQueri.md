@@ -37,7 +37,7 @@ show tables;
 describe mahasiswa;
 ```
 
-- **Menambahkan data kedalam tabel**
+- **Menambahkan data kedalam tabel (CERATE)**
 ```bash
 insert into mahasiswa values (
   '', 'Fransis', '215410072', 'fransis@example.info','Informatika','frans.jpg'
