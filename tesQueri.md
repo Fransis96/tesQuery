@@ -76,47 +76,38 @@ select nama,gambar from mahasiswa;
 insert into mahasiswa values(
   '','Agnes','215410000','agnes@hotmail.com','Teknik Komputer','Agnes.jpg'
 );
+```
 
-
+```bash
 insert into mahasiswa values(
   '','Fitria','215410067',-> 'fitria@gmail.com','Informatika','Fitri.jpg'
 );
+```
 
-- Menampilkan data dari field tertentu
+- Menampilkan data dari field tertentu  
 ```bash
 select nama from mahasiswa;
 ```
 
-3 rows in set (0.001 sec)
-MariaDB [phpdasar]> select nrp,nama,jurusan from mahasiswa;
-+-----------+---------+-----------------+
-| nrp | nama | jurusan |
-+-----------+---------+-----------------+
-| 215410072 | Fransis | Informatika |
-| 215410000 | Agnes | Teknik Komputer |
-| 215410067 | Fitria | Informatika |
-+-----------+---------+-----------------+
-3 rows in set (0.001 sec)
-// Mencari data berdasarkan nrp / nim
-MariaDB [phpdasar]> select * from mahasiswa where nrp='215410072';
-+----+---------+-----------+----------------------+-------------+-----------+
-| id | nama | nrp | email | jurusan | gambar |
-+----+---------+-----------+----------------------+-------------+-----------+
-| 1 | Fransis | 215410072 | fransis@example.info | Informatika | frans.jpg |
-+----+---------+-----------+----------------------+-------------+-----------+
-1 row in set (0.001 sec)
-// Menampilkan isi tabel
-MariaDB [phpdasar]> select * from mahasiswa;
-+----+---------+-----------+----------------------+-----------------+-----------+
-| id | nama | nrp | email | jurusan | gambar |
-+----+---------+-----------+----------------------+-----------------+-----------+
-| 1 | Fransis | 215410072 | fransis@example.info | Informatika | frans.jpg |
-| 2 | Agnes | 215410000 | agnes@hotmail.com | Teknik Komputer | Agnes.jpg |
-| 3 | Fitria | 215410067 | fitria@gmail.com | Informatika | Fitri.jpg |
-+----+---------+-----------+----------------------+-----------------+-----------+
-3 rows in set (0.000 sec)
-// Melakukan Edit Data / Record berdasarkan primary key (id)
-MariaDB [phpdasar]> update mahasiswa set jurusan='Informatika' where id = 2;
+```bash
+select nrp,nama,jurusan from mahasiswa;
+```
+
+- **Mencari data berdasarkan nrp / nim**
+```bash
+select * from mahasiswa where nrp='215410072';
+```
+
+- **Menampilkan isi tabel**
+```bash
+select * from mahasiswa;
+```
+
+- **Melakukan Edit Data / Record berdasarkan primary key (id)**
+```bash
+update mahasiswa set jurusan='Informatika' where id = 2;
+```
+
 Query OK, 1 row affected (0.003 sec)
 Rows matched: 1 Changed: 1 Warnings: 0// Menampilkan isi table
 MariaDB [phpdasar]> select * from mahasiswa;
