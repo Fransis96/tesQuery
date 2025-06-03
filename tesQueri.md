@@ -137,3 +137,32 @@ drop database phpdasar;
 ```bash
 show databases;
 ```
+
+---
+### LAINNYA
+
+```bash
+create database toko;
+```
+```bash
+use toko;
+```
+```bash
+create table if not exists barang (
+  id int auto_increment not null primary key,
+  nama varchar(40) not null,
+  harga int not null default 0,
+  stok int not null default 0,
+  foto varchar(70) not null default ''
+);
+```
+```bash
+insert into barang(nama,harga,stok, foto) values
+  ('Sepatu Adidas 1',500000,5,'sepatu1.jpg'),
+  ('Sepatu Adidas 2',600000,5,'sepatu2.jpg'),
+  ('Sepatu Converse 1',450000,6,'sepatu3.jpg'),
+  ('Sepatu Converse 2',550000,6,'sepatu4.jpg'),
+  ('Sepatu Sneakers 1',560000,7,'sepatu5.jpg'),
+  ('Sepatu Sneakers 2',660000,7,'sepatu6.jpg'),
+  ('Sepatu Sneakers 3',760000,4,'sepatu7.jpg');
+```
