@@ -1,4 +1,4 @@
 ## Tes Query
 
 > [!NOTE]  
-> Catatan kaki Kita.  
+> Catatan 👣 Kita.  
