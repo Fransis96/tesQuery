@@ -5,7 +5,7 @@ mysql -u root
 
 - **Melihat daftar database**
 ```
-MariaDB [(none)]> show databases;
+show databases;
 ```
 - **Membuat database**
 ```bash
